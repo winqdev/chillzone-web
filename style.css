@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+
+body {
+    background-color: #202021;
+    animation: gradient 15s ease infinite;
+    text-align: center;
+    background-size: 400% 400%;
+  }
+
+  #welcome-section {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-color: #202021;
+    animation: gradient 15s ease infinite;
+    text-align: center;
+    background-size: 400% 400%;
+  }
+
+  #information {
+    width: 100%;
+    background-color: #322d2d;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30vh 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .maintxt, .maintxt2 {
+    font-size: 35px;
+  }
+
+  .maintxt {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    animation: rainbow_animation 5s ease-in-out infinite;
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   cursor: pointer;
+  }
+
+  .maintxt2 {
+    animation: welcome 1s ease infinite;
+  }
+
+  h2 {
+    color: #ba9cf7;
+    font-family: 'VT323';
+  }
+
+  @keyframes rainbow_animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+      background-position: 0 100%;
+    }
+}
+
+ @keyframes welcome {
+    0%,100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+ }
+
+@media only screen and (max-width: 550px) {
+}
